@@ -54,9 +54,13 @@ Xnite/
 ### Step 1 — Create a basic window
 
 ```python
+# Import arcade
 import arcade
 
+# Create the window
 window = arcade.Window(1280, 720, "Xnite")
+
+# Run the game loop
 arcade.run()
 ```
 
@@ -72,7 +76,10 @@ WINDOW_WIDTH = 1280
 WINDOW_HEIGHT = 720
 WINDOW_TITLE = "Xnite"
 
+# Create the window
 window = arcade.Window(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE)
+
+# Run the game loop
 arcade.run()
 ```
 
@@ -93,10 +100,12 @@ class Game(arcade.Window):
         """Initialize the game window and settings."""
         super().__init__(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE)
 
+    # arcade's on_draw will barely count as clearing and rewriting the screen at very roughly 60fps
     def on_draw(self):
         """Render the screen."""
         self.clear()
 
+# Run the game only if this file is executed directly
 if __name__ == "__main__":
     Game()
     arcade.run()
@@ -114,8 +123,11 @@ WINDOW_HEIGHT = 720
 WINDOW_TITLE = "Xnite"
 
 class Game(arcade.Window):
+    # When Game() launches, run this code first
     def __init__(self):
+        # Open game window, set size & title
         super().__init__(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE)
+        # Sky Blue Background
         arcade.set_background_color(arcade.color.SKY_BLUE)
 
     def on_draw(self):
@@ -144,6 +156,7 @@ class Game(arcade.Window):
 
     def on_draw(self):
         self.clear()
+        # Draw text of window title on screen
         arcade.draw_text(WINDOW_TITLE, 333, 333, arcade.color.BLACK, 99)
 
 if __name__ == "__main__":
@@ -171,6 +184,7 @@ class Game(arcade.Window):
         self.clear()
         arcade.draw_text(WINDOW_TITLE, 333, 333, arcade.color.BLACK, 99)
 
+    #Better 60fps dynamic slow, probably
     def update(self, delta_time: float):
         pass  # Placeholder
 
@@ -190,12 +204,17 @@ import pyglet
 WINDOW_WIDTH = 1280
 WINDOW_HEIGHT = 720
 WINDOW_TITLE = "Xnite"
+
+# Add a variable
+
 WINDOW_ICON_PATH = "assets/window_icon.ico"
 
 class Game(arcade.Window):
     def __init__(self):
         super().__init__(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE)
         arcade.set_background_color(arcade.color.SKY_BLUE)
+
+        #add the icon to the window
         self.set_icon(pyglet.image.load(WINDOW_ICON_PATH))
 
     def on_draw(self):
@@ -217,6 +236,8 @@ if __name__ == "__main__":
 ```python
 import arcade
 import pyglet
+
+# Import os module
 import os
 
 WINDOW_WIDTH = 800
@@ -227,8 +248,8 @@ WINDOW_ICON_PATH = "assets/window_icon.ico"
 class Game(arcade.Window):
     def __init__(self):
         super().__init__(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE)
-        arcade.set_background_color(arcade.color.SKY_BLUE)
 
+        # checks if on pc, and tries to use window icon in window, but let's it slide if it doesn't work
         if os.path.exists(WINDOW_ICON_PATH):
             try:
                 self.set_icon(pyglet.image.load(WINDOW_ICON_PATH))
@@ -236,6 +257,8 @@ class Game(arcade.Window):
                 print(f"[Warning] Failed to set icon: {e}")
         else:
             print(f"[Notice] Icon file not found: {WINDOW_ICON_PATH}")
+
+        arcade.set_background_color(arcade.color.SKY_BLUE)
 
     def on_draw(self):
         self.clear()
