@@ -1,4 +1,4 @@
-##  Xnite Platformer
+###  Xnite Platformer
 
 This README was made during development of Xnite to help organize and track progress on dev of **Xnite**.
 
@@ -8,7 +8,7 @@ Built in Python using the [Arcade](https://api.arcade.academy) library.
 
 ---
 
-### Current Features (Step -2)
+## Current Features (Step -2)
 
 - Game window initialized with:
   - Custom title (`"Xnite"`)
@@ -18,37 +18,27 @@ Built in Python using the [Arcade](https://api.arcade.academy) library.
 
 ---
 
-### Requirements (Step -1)
+## Requirements (Step -1)
 
 - Python 3.13+
 - Arcade 3.3.0+
 
 ---
 
-### Begin Coding (Step 0)
+## Begin Coding (Step 0)
+Initial Setup
+ Download and install Python (make sure to check "Add to PATH").
+ Open terminal and run: pip install arcade
 
-### Initial Setup
-
-1. Download and install Python (make sure to check "Add to PATH").
-2. Open terminal and run:
-
-   ```bash
-   pip install arcade
-
-3. Create this folder structure:
-
-```
+Create this folder structure:
 Xnite/
 ├── main.py
 ├── README.md
 ├── assets/
-└─── window_icon.ico
-```
+└──── window_icon.ico
 
-
-4. Save your main script as main.py in the Xnite/ folder.
-
-5. Put your window icon in the assets/ folder.
+-Save your main script as main.py in the Xnite/ folder.
+ -Put your window icon in the assets/ folder.
 
 1) Create the window, it takes 3 lines of code for displaying blank window in arcade
 
