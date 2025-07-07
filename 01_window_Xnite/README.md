@@ -76,10 +76,9 @@ WINDOW_WIDTH = 1280
 WINDOW_HEIGHT = 720
 WINDOW_TITLE = "Xnite"
 
-# Create the window
+# Change numbers to the window constants
 window = arcade.Window(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE)
 
-# Run the game loop
 arcade.run()
 ```
 
@@ -90,11 +89,11 @@ arcade.run()
 ```python
 import arcade
 
-# Constants
 WINDOW_WIDTH = 1280
 WINDOW_HEIGHT = 720
 WINDOW_TITLE = "Xnite"
 
+# main game class
 class Game(arcade.Window):
     # When Game() launches, run this code first
     def __init__(self):
