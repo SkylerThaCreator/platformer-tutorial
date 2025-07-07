@@ -1,4 +1,4 @@
-###  Xnite Platformer
+##  Xnite Platformer
 
 This README was made during development of Xnite to help organize and track progress on dev of **Xnite**.
 
@@ -8,7 +8,7 @@ Built in Python using the [Arcade](https://api.arcade.academy) library.
 
 ---
 
-## Current Features (Step -2)
+### Current Features (Step -2)
 
 - Game window initialized with:
   - Custom title (`"Xnite"`)
@@ -18,14 +18,14 @@ Built in Python using the [Arcade](https://api.arcade.academy) library.
 
 ---
 
-## Requirements (Step -1)
+### Requirements (Step -1)
 
 - Python 3.13+
 - Arcade 3.3.0+
 
 ---
 
-## Begin Coding (Step 0)
+### Begin Coding (Step 0)
 
 ### Initial Setup
 
