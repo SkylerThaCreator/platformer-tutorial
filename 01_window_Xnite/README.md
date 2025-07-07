@@ -274,7 +274,17 @@ if __name__ == "__main__":
 
 ---
 
-## ✅ Final Code Snapshot
+### Finished code below
+### Finished code below
+### Finished code below
+
+### Finished code below
+### Finished code below
+### Finished code below
+
+### Finished code below
+### Finished code below
+### Finished code below
 
 ```python
 import arcade
