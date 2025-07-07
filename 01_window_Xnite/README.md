@@ -1,6 +1,6 @@
 #  Xnite Platformer
 
-This README was made during development of Xnite to help organize and track progress on dev of **Xnite**.
+This README was made during development of **Xnite** to help organize and track progress.
 
 **Xnite** is a full-featured 2D platformer where you play as a knight who can run, jump, dash, double jump, and wall jump through a zombie-infested island. Your goal? Rescue the princess, or something.
 
