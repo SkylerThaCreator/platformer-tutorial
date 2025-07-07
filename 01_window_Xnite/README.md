@@ -96,7 +96,9 @@ WINDOW_HEIGHT = 720
 WINDOW_TITLE = "Xnite"
 
 class Game(arcade.Window):
+    # When Game() launches, run this code first
     def __init__(self):
+        # Open game window, set size & title
         """Initialize the game window and settings."""
         super().__init__(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE)
 
@@ -123,9 +125,7 @@ WINDOW_HEIGHT = 720
 WINDOW_TITLE = "Xnite"
 
 class Game(arcade.Window):
-    # When Game() launches, run this code first
     def __init__(self):
-        # Open game window, set size & title
         super().__init__(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE)
         # Sky Blue Background
         arcade.set_background_color(arcade.color.SKY_BLUE)
