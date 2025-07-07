@@ -50,16 +50,16 @@ Xnite/
 
 ## Begin Coding
 
-1) Create the window, it takes 3 lines of code for displaying blank window in arcade
+# 1) Create the window, it takes 3 lines of code for displaying blank window in arcade
 
-### Import arcade module into python interpreter
-import arcade
+Import arcade module into python interpreter
+### import arcade
 
 Create the window
 ### window = arcade.Window(1280, 720, "XNite)
 
-# Run the game loop
-arcade.run()
+Run the game loop
+### arcade.run()
 
 2) Cleaned up with constant variables and names
 
