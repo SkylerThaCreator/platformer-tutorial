@@ -207,7 +207,6 @@ WINDOW_HEIGHT = 720
 WINDOW_TITLE = "Xnite"
 
 # Add a variable
-
 WINDOW_ICON_PATH = "assets/window_icon.ico"
 
 class Game(arcade.Window):
@@ -250,7 +249,7 @@ class Game(arcade.Window):
     def __init__(self):
         super().__init__(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE)
 
-        # checks if on pc, and tries to use window icon in window, but let's it slide if it doesn't work
+        # checks if on pc, and tries to use window icon in window, but let's it slide if it doesn't work out
         if os.path.exists(WINDOW_ICON_PATH):
             try:
                 self.set_icon(pyglet.image.load(WINDOW_ICON_PATH))
