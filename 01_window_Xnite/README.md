@@ -63,34 +63,34 @@ Xnite/
 
 # 2) Cleaned up with constant variables and names
 
-### import arcade
+import arcade
 
-### #Constants
-### WINDOW_WIDTH = 1280
-### WINDOW_HEIGHT = 720
-### WINDOW_TITLE = "Xnite"
+#Constants
+WINDOW_WIDTH = 1280
+WINDOW_HEIGHT = 720
+WINDOW_TITLE = "Xnite"
 
-### window = arcade.Window(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE)
+window = arcade.Window(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE)
 
-### #Run the game loop
-### arcade.run()
+#Run the game loop
+arcade.run()
 
 # 3) Added and called Game() class and ran Game(arcade.Window) loop
 
 ### import arcade
 
-### #constants
+#constants
 ### WINDOW_WIDTH = 1280
 ### WINDOW_HEIGHT = 720
 ### WINDOW_TITLE = "Xnite"
 
 ### class Game(arcade.Window):
 ###     def __init__(self):
-###         """Initialize the game window and settings."""
+        """Initialize the game window and settings."""
 ###         super().__init__(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE)
 
 ###     def on_draw(self):
-###         """Render the screen."""
+        """Render the screen."""
 ###         self.clear()
 
 ### if __name__ == "__main__":
@@ -260,6 +260,18 @@ Xnite/
 ### Finished code below
 ### Finished code below
 ### Finished code below
+
+
+
+
+
+
+
+
+
+
+
+
 
 import arcade
 import pyglet
