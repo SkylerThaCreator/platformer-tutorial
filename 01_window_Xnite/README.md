@@ -109,6 +109,7 @@ class Game(arcade.Window):
 
 # Run the game only if this file is executed directly
 if __name__ == "__main__":
+    # Call the game class
     Game()
     arcade.run()
 ```
