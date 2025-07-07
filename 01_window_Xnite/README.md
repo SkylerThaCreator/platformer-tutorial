@@ -36,11 +36,15 @@ Built in Python using the [Arcade](https://api.arcade.academy) library.
    pip install arcade
 
 3. Create this folder structure:
+
+```
 Xnite/
 ├── main.py
 ├── README.md
 ├── assets/
-└──── window_icon.ico
+└─── window_icon.ico
+```
+
 
 4. Save your main script as main.py in the Xnite/ folder.
 
