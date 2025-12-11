@@ -24,7 +24,6 @@ class Game(arcade.Window):
     def on_draw(self):
         """Render the screen."""
         self.clear()
-        arcade.draw_text(WINDOW_TITLE, 333, 333, arcade.color.BLACK, 99)
 
     def update(self, delta_time: float) -> None:
         #60 fps cap
